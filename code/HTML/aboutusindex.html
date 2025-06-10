@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About us - Online Grocery Xpress</title>
+
+
+
+  <!-- logo to display in tab  -->
+  <link rel="icon" href="/image/Logo.png" type="image/x-icon">
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- linking css  -->
+  <link rel="stylesheet" href="/code/CSS/aboutusstyle.css">
+
+  <!-- link navbar  css -->
+  <link rel="stylesheet" href="/code/CSS/navbarstylestyle.css">
+
+  <!-- link navbar  css -->
+
+  <style>
+    .logo img {
+      width: 50px;
+      /* set the width of the logo  */
+
+      height: 50px;
+      /* set the height of the logo */
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- header section begins  -->
+  <header>
+
+    <div class="header-1">
+
+      <a href="/code/HTML/index.html" class="logo">
+        <img src="/image/Logo.png" alt="logo">
+        online grocery xpress
+      </a>
+
+      <form action="" class="search-box-container">
+        <input type="search" id="search-box" placeholder="search here...">
+
+        <label for="search-box" class="fas fa-search"></label>
+
+      </form>
+
+    </div>
+
+    <div class="header-2">
+      <!-- menu bar starts inside header-2 div  -->
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <!-- navigation open  -->
+      <nav class="navbar">
+        <a href="/code/HTML/index.html">home</a>
+        <a href="/code/HTML/productindex.html">product</a>
+        <a href="/code/HTML/blogindex.html">blog</a>
+        <a href="/code/HTML/researchindex.html">research</a>
+        <a href="/code/HTML/aboutusindex.html">about us</a>
+      </nav>
+      <!-- navigation close  -->
+
+      <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"><a>
+            <a href="#" class="fas fa-heart"><a>
+                <a href="/code/HTML/LoginForm.html" class="fas fa-user-circle"><a>
+      </div>
+
+    </div>
+  </header>
+  <!-- header section ends  -->
+
+
+
+  <!--our team content-->
+  <section style="background-color:rgb(20, 21, 21);font-size: 20px;">
+    <div class="wrapper">
+
+      <h1> <span style="color: #fff;">Our</span> <span style="color: #fff"> team</span></h1>
+
+      <div class="our_team">
+        <div class="team_member">
+          <div class="member_img">
+            <img src="/image/Swikar.png" alt="our_team"
+              style="border: 3px solid black;height: 100%;object-fit: cover;" />
+          </div>
+          <h3>Swikar Shrestha</h3>
+          <span>Team member</span>
+          <p>
+            one the founding members.<br>He handles the marketing side of our
+            business
+          </p>
+          <a href="/code/HTML/swikarportfolio.html" class="cv">View Profile</a><!-- make cv download-->
+        </div>
+
+        <div class="team_member">
+          <div class="member_img">
+            <img src="/image/Ritesh.png" alt="our_team"
+              style="border: 3px solid black;height: 100%;object-fit: cover;" />
+          </div>
+          <h3>Ritesh Mishra</h3>
+          <span>Team Member</span>
+          <p>
+            One of the founding members.<br>He handles Management
+            of our Team.
+          </p>
+          <a href="/code/HTML/riteshportfolio.html" class="cv">View Profile</a><!-- make cv download-->
+        </div>
+
+        <div class="team_member">
+          <div class="member_img">
+            <img src="/image/Roshan.png" alt="our_team" style="border: 3px solid black;object-fit: cover;">
+          </div>
+          <h3>Roshan Bishwas </h3>
+          <span>Team member</span>
+          <p>
+            As one of our founding members.<br>He maintains Business relations
+            of the company.
+          </p>
+          <a href="/code/HTML/roshanportfolio.html " class="cv">View Profile</a><!-- make cv download-->
+        </div>
+
+        <div class="team_member">
+          <div class="member_img">
+            <img src="/image/prabesh.png" alt="our_team" style="border: 3px solid black;object-fit: cover;" />
+          </div>
+          <h3>Prabesh Karki</h3>
+          <span>Team member</span>
+          <p>
+            As one of our founding members<br>He maintains Business
+            growth of the company.
+          </p>
+          <a href="/code/HTML/prabeshportfolio.html" class="cv">View Profile</a><!-- make cv download-->
+        </div>
+
+        <div class="team_member">
+          <div class="member_img">
+            <img src="/image/Anish.png" alt="our_team" style="border: 3px solid black;object-fit: cover;" />
+          </div>
+          <h3>Anish Tamang</h3>
+          <span>Team Leader</span>
+          <p>
+            He is a founding member team.<br>He comes up with innovative
+            idea in the business
+          </p>
+          <a href="/code/HTML/anishportfolio.html" class="cv">View Profile</a><!-- make cv download-->
+        </div>
+      </div>
+    </div>
+  </section>
+  <br />
+  <br />
+  <!--contact us-->
+  <section style="background-color: rgb(255, 133, 57);font-size: 20px;">
+    <h1 style="text-align: center;"> <strong>Feed</strong><strong <span style="color: #fff;">back</span> </strong></h1>
+
+    <!-- this is our feedback form  -->
+    <form class="feedbackform" id="contactForm" action="#" method="POST">
+      <label for="fname">First Name:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+      <label for="lname">Last Name:</label><br />
+      <input type="text" id="lname" name="lname" /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" /><br />
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message"></textarea><br />
+      <input type="submit" value="Submit" onclick="showAlert()" />
+    </form>
+
+  </section>
+
+  <!-- this is start of footer section   -->
+  <section class="footer" style="background-color: bisque;">
+
+    <div class="box-container">
+
+      <div class="box">
+        <!-- clickable logo -->
+        <a href="#" class="logo">
+          <img src="/image/Logo.png" alt="logo">
+          online grocery xpress
+        </a>
+        <p>Welcome to Grocery Xpress, our online grocery shop that delivers the freshest and most extensive
+          selection of items straight to your home.
+          Our website was created with convenience and comfort in mind, allowing you to shop for all of your
+          grocery requirements in one location.
+          Online Grocery Xpress provides a simple platform for consumers to choose and buy a variety of food
+          online.</p>
+        <!-- link of social media site  -->
+        <div class="share">
+          <a href="#" class="btn fab fa-facebook-f"></a>
+          <a href="#" class="btn fab fa-twitter"></a>
+          <a href="#" class="btn fab fa-instagram"></a>
+          <a href="#" class="btn fab fa-linkedin"></a>
+        </div>
+      </div>
+
+      <!-- next child div for location -->
+      <div class="box">
+        <h3>our location</h3>
+        <div class="links">
+          <a href="#">Kathmandu</a>
+          <a href="#">Pokhara</a>
+          <a href="#">Biratnagar</a>
+          <a href="#">Damak</a>
+          <a href="#">Dharan</a>
+        </div>
+      </div>
+      <!-- next child div for navbar -->
+      <div class="box">
+        <h3>quick links</h3>
+        <div class="links">
+          <a href="/code/HTML/index.html">home</a>
+          <a href="/code/HTML/productindex.html">product </a>
+          <a href="/code/HTML/blogindex.html">blog </a>
+          <a href="/code/HTML/researchindex.html">research </a>
+          <a href="/code/HTML/aboutusindex.html">about us </a>
+        </div>
+      </div>
+      <!-- next child div for app download -->
+      <div class="box">
+        <h3>download app</h3>
+        <div class="links">
+          <a href="#">google play</a>
+          <a href="#">window xp</a>
+          <a href="#">app store</a>
+        </div>
+      </div>
+
+    </div>
+
+    <h1 class="credit"> created by <span> online grocery xpress</span> | all right reserved!</h1>
+  </section>
+
+  <!-- this is the internal javascript code to validate feedback form  -->
+
+  <script>
+    document
+      .getElementById("contactForm")
+      .addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Get form data
+        var formData = new FormData(event.target);
+
+        // Check if form fields are empty
+        if (!formData.get("fname") || !formData.get("lname") || !formData.get("email") || !formData.get("message")) {
+          alert("Please fill in all the form fields before submitting.");
+          return;
+        }
+
+        // Construct message
+        var message = "Name: " + formData.get("fname") + " " + formData.get("lname") + "\n"
+        message += "Email: " + formData.get("email") + "\n";
+        message += "Message: " + formData.get("message");
+
+        // Display alert with the message
+        alert("Your feedback have been submitted\n\n" + message);
+      });
+  </script>
+
+</body>
+
+</html>

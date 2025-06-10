@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Grocery Xpress</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- adding logo in tab  -->
+    <link rel="icon" href="/image/Logo.png" type="image/x-icon" />
+
+    <!-- link css  -->
+    <link rel="stylesheet" href="/code/CSS/loginStyle.css" />
+
+    <!-- linking external js  -->
+    <script src="/code/JS/script.js"></script>
+  </head>
+  <style>
+    
+    /* style for logo  image */
+    .logo img {
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+  <body>
+    <section class="section" style="padding: 0px">
+      <div class="container">
+        <div class="form-box">
+          <h1 id="title">Log In Form</h1>
+
+          <form name="loginform" onsubmit="validatelogin()" >
+            <div class="input-group">
+              <div class="input-field" id="nameField">
+                <img src="/image/user (2).png" alt="logo" />
+                <input type="text" placeholder="Name" name="name" / required>
+              </div>
+
+              <div class="input-field">
+                <img src="/image/envelope.png" alt="logo" />
+                <input type="email" placeholder="Email" name="email" / required>
+              </div>
+
+              <div class="input-field">
+                <img src="/image/lock.png" alt="logo" />
+                <input type="password" placeholder="Password" name="password" / required>
+              </div>
+
+              <p>Lost password <a href="#">Click Here!</a></p>
+            </div>
+
+            
+              <input type="submit" value="login" style="color: white; background-color: purple; cursor: pointer" />
+            
+            <a href="/code/HTML/index.html">Go Back </a>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    
+
+
+   
+   
+  </body>
+</html>

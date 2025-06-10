@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+
+    <!-- adding logo in tab check spelling of icons -->
+    <link rel="icon" href="/image/Logo.png" type="image/x-icon">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- css file link  -->
+    <link rel="stylesheet" href="/code/CSS/navbarstylestyle.css">
+
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+
+
+        .text-box {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 50px;
+
+        }
+
+
+        .image-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            align-items: flex-start;
+            display: grid;
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        .image-box img {
+            width: 40rem;
+            height: auto;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            border: orange 2px solid;
+            border-radius: 50px;
+        }
+
+        .image-box img:hover {
+            transform: scale(1.1);
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup img {
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+
+        .logo img {
+            width: 50px;
+            /* set the width of the image */
+
+            height: 50px;
+            /* set the height of the image */
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- header section begins  -->
+    <header>
+
+        <div class="header-1">
+            <!-- remember closing i tag  -->
+            <a href="/code/HTML/index.html" class="logo" target="_blank">
+                <img src="/image/Logo.png" alt="logo">
+                online grocery xpress
+            </a>
+
+
+            <form action="" class="search-box-container">
+                <input type="search" id="search-box" placeholder="search here...">
+
+                <label for="search-box" class="fas fa-search"></label>
+
+            </form>
+
+        </div>
+
+        <div class="header-2">
+            <!-- menu bar starts inside header-2 div  -->
+            <div id="menu-bar" class="fas fa-bars"></div>
+
+            <!-- navigation open  -->
+            <nav class="navbar">
+
+                <a href="/code/HTML/index.html" target="_blank">home</a>
+                <a href="/code/HTML/productindex.html" target="_blank">product</a>
+                <a href="/code/HTML/blogindex.html" target="_blank">blog</a>
+                <a href="/code/HTML/researchindex.html" target="_blank">research</a>
+                <a href="/code/HTML/aboutusindex.html" target="_blank"> about us</a>
+
+            </nav>
+
+            <!-- navigation close  -->
+
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart" target="_blank"><a>
+                        <a href="#" class="fas fa-heart" target="_blank"><a>
+                                <a href="/code/HTML/LoginForm.html" class="fas fa-user-circle" target="_blank"><a>
+
+
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="text-box">
+                <h2>Research <span style="color: var(--green);">Findings</span></h2>
+            </div>
+
+            <div class="image-box">
+
+                <figure style="text-align: center;"">
+                    <img src=" /image/navbar.png" alt="Image 1" class="popup-image" style="width: 50%;">
+                    <figcaption>Fig: Our website : Navigation bar</figcaption>
+                </figure>
+
+                <ul>
+                    <li>In our page nav bar contains internal link between other web pages</li>
+                    <li>Our nav bar has hover effect.</li>
+                </ul>
+
+            </div>
+
+            <div class="image-box">
+                <figure style="text-align: center;">
+                    <img src="/image/khetinavbar.png" alt="Image 1" class="popup-image" style="width: 50%;">
+                    <figcaption>Fig: khetifood.com website : Navigation bar</figcaption>
+                </figure>
+
+                <ul>
+                    <li>In it , nav bar contains internal link </li>
+                    <li>as well as well functioning add to cart</li>
+                    <li>dynamix search box.</li>
+                </ul>
+
+            </div>
+
+            <div class="image-box">
+                <figure style="text-align: center;">
+                    <img src="/image/footer.png" alt="Image 1" class="popup-image" style="width: 50%;">
+                    <figcaption>Fig: Our website : Footer</figcaption>
+                </figure>
+
+                <ul>
+                    <li>Our footer contains some information about or location and quick links</li>
+                    <li> download and social media icons only.</li>
+
+                </ul>
+
+            </div>
+
+            <div class="image-box">
+                <figure style="text-align: center;">
+                    <img src="/image/khetifooter.png" alt="Image 1" class="popup-image" style="width: 50%;">
+                    <figcaption>Fig: khetifood.com website : Footer</figcaption>
+                </figure>
+
+                <ul>
+                    <li>Its footer section contains functionable newsletter and download links</li>
+                    <li> social media links and QR scan too.</li>
+
+                </ul>
+
+            </div>
+
+            <div class="image-box">
+                <figure style="text-align: center;">
+                    <img src="/image/productlist.png" alt="Image 1" class="popup-image" style="width: 50%;">
+                    <figcaption>Fig: Our website : Product list</figcaption>
+                </figure>
+
+                <ul>
+                    <li>Our website contains hover effect of icons in product card with images</li>
+                    <li> It have add to cart icon and read more options</li>
+
+                </ul>
+
+            </div>
+
+            <div class="image-box">
+                <figure style="text-align: center;">
+                    <img src="/image/khetiproductlist.png" alt="Image 1" class="popup-image" style="width: 50%;">
+                    <figcaption>Fig: khetifood.com : Product list</figcaption>
+                </figure>
+
+                <ul>
+                    <li>In the reference webpage of product, there is hover icons </li>
+                    <li>background hover of logo in product card.</li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="image-box">
+                <figure style="text-align: center;">
+                    <img src="/image/blog.png" alt="Image 1" class="popup-image" style="width: 50%;">
+                    <figcaption>Fig: Our website : Blog page</figcaption>
+                </figure>
+
+                <ul>
+                    <li>Our blog page contains simple image of technology</li>
+                    <li> read more button link.</li>
+
+                </ul>
+
+            </div>
+
+            <div class="image-box">
+                <figure style="text-align: center;">
+                    <img src="/image/khetiblog.png" alt="Image 1" class="popup-image" style="width: 50%;">
+                    <figcaption>Fig: khetifood.com website : Blog page</figcaption>
+                </figure>
+
+                <ul>
+                    <li>Kheti blog page contains view eye where views is counted</li>
+                    <li>author name and date of publishing bog and read more link.</li>
+
+
+                </ul>
+
+            </div>
+
+            <div class="image-box">
+                <figure style="text-align: center;">
+                    <img src="/image/feedback.png" alt="Image 1" class="popup-image" style="width: 50%;">
+                    <figcaption>Fig: Our website : Feedback form</figcaption>
+                </figure>
+
+                <ul>
+                    <li>It will validate the form </li>
+                    <li>give alert message.</li>
+
+
+                </ul>
+
+            </div>
+
+            <div class="image-box">
+                <figure style="text-align: center;">
+                    <img src="/image/khetifeedback.png" alt="Image 1" class="popup-image" style="width: 50%;">
+                    <figcaption>Fig: khetifood.com website : Feedback form</figcaption>
+                </figure>
+
+                <ul>
+                    <li>In kheti there is live chat feed that popup form a tomato icons for receiving feedback from
+                        customers</li>
+                    <li> the feed back form is in Nepli fonts</li>
+
+
+
+                </ul>
+
+            </div>
+
+
+
+
+            <section>
+                <h1 style="text-align: center;font-size: 25px;">Resources Use for Creating web pages</h1>
+                <div style="display: flex;justify-content: space-evenly;">
+                    <a href="https://www.w3schools.com/">
+                        <img src="/image/W3school logo.png" alt="w3school logo">
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <img src="/image/youtubelogo.png" alt="youtubelogo">
+                    </a>
+                    <a href="https://khetifood.com/index.php?route=product/category&path=215">
+                        <img src="/image/khetifoodlogo.png" alt="khetilogo">
+                    </a>
+                </div>
+
+
+
+
+        </div>
+        </section>
+
+
+        <!-- this is start of footer section   -->
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <!-- clickable logo -->
+                    <a href="#" class="logo"><img src="/image/Logo.png"> online grocery xpress</a>
+                    <p>Welcome to Grocery Xpress, our online grocery shop that delivers the freshest and most
+                        extensive
+                        selection of items straight to your home.
+                        Our website was created with convenience and comfort in mind, allowing you to shop for all
+                        of your
+                        grocery requirements in one location.
+                        Online Grocery Xpress provides a simple platform for consumers to choose and buy a variety
+                        of food
+                        online.</p>
+                    <!-- link of social media site  -->
+                    <div class="share">
+                        <a href="#" class="btn fab fa-facebook-f"></a>
+                        <a href="#" class="btn fab fa-twitter"></a>
+                        <a href="#" class="btn fab fa-instagram"></a>
+                        <a href="#" class="btn fab fa-linkedin"></a>
+                    </div>
+                </div>
+
+                <!-- next child div for location -->
+                <div class="box">
+                    <h3>our location</h3>
+                    <div class="links">
+                        <a href="#">Kathmandu</a>
+                        <a href="#">Pokhara</a>
+                        <a href="#">Biratnagar</a>
+                        <a href="#">Damak</a>
+                        <a href="#">Dharan</a>
+                    </div>
+                </div>
+                <!-- next child div for navbar -->
+                <div class="box">
+                    <h3>quick links</h3>
+                    <div class="links">
+                        <a href="/code/HTML/index.html">home</a>
+                        <a href="/code/HTML/productindex.html">product</a>
+                        <a href="/code/HTML/blogindex.html">blog</a>
+                        <a href="/code/HTML/researchindex.html">research</a>
+                        <a href="/code/HTML/aboutusindex.html">about us</a>
+                    </div>
+                </div>
+                <!-- next child div for app download -->
+                <div class="box">
+                    <h3>download app</h3>
+                    <div class="links">
+                        <a href="#">google play</a>
+                        <a href="#">window xp</a>
+                        <a href="#">app store</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <h1 class="credit"> created by <span> online grocery xpress </span> | all right reserved!</h1>
+        </section>
+
+        <!-- this is end of footer section   -->
+
+
+
+
+
+
+        <script>
+            // JS code for pop-up of images
+            document.addEventListener('DOMContentLoaded', function () {
+                var popup = document.getElementById('popup');
+                var popupImg = document.getElementById('popup-img');
+                var close = document.getElementById('close');
+                var images = document.querySelectorAll('.popup-image');
+
+                images.forEach(function (image) {
+                    image.addEventListener('click', function () {
+                        popup.style.display = 'flex';
+                        popupImg.src = this.src;
+                    });
+                });
+
+                close.addEventListener('click', function () {
+                    popup.style.display = 'none';
+                });
+            });
+        </script>
+</body>
+
+</html>

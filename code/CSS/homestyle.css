@@ -1,0 +1,574 @@
+/* external css  */
+body {
+  margin: 0px;
+}
+
+/* global variables   */
+:root {
+  --green: #27ae60;
+  --black: #2c2c54;
+}
+
+
+/* css for styling all elements  */
+* {
+  margin: o;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+/* css for changing color when selecting text  */
+*::selection {
+  background: var(--green);
+  color: #fff;
+}
+
+.background {
+  background-image: url(/images/Black\ and\ White\ Minimalist\ Interior\ Company\ Desktop\ Prototype.png);
+  background-color: #27ae60;
+  color: #fff;
+  padding-top: 500px;
+  padding-bottom: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6.5rem;
+  scroll-behavior: smooth;
+}
+/* css for section of home  */
+section {
+  padding: 2rem 9%;
+}
+
+/* for btn class  */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--green);
+  color: #fff;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  text-align: center;
+  cursor: pointer;
+}
+/* hover effect for btn  */
+.btn:hover {
+  background: var(--black);
+}
+
+/* css for class header-1  */
+
+.header-1 {
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /*space-between will maintain proper space between*/
+  padding: 2rem 9%;
+}
+
+/* css for logo  */
+.logo {
+  color: var(--black);
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+/* css for icons inside logo class   */
+.logo i {
+  padding-right: 0.5rem;
+  color: var(--green);
+}
+/* for icons  */
+.icons {
+  padding-left: 20rem;
+  /* display: flex;
+    align-items: center;
+    justify-content: space-evenly; */
+}
+/* css for header-1 class search box  */
+.header-1 .search-box-container {
+  display: flex;
+  height: 5rem;
+}
+
+/* css for search box  */
+.header-1 .search-box-container #search-box {
+  height: 100%;
+  width: 100%;
+  padding: 1rem; /*no space for rem*/
+  font-size: 2rem;
+  color: #333;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  text-transform: none;
+}
+/* spelling mistakes of class name will discard css effect  */
+.header-1 .search-box-container label {
+  height: 100%;
+  width: 8rem;
+  font-size: 2.5rem;
+  line-height: 5rem;
+  color: #fff;
+  background: var(--green);
+  text-align: center;
+  cursor: pointer;
+}
+/* hover effect for search icons  */
+.header-1 .search-box-container label:hover {
+  background: var(--black);
+}
+
+/* css for header-2 for navigation bar  */
+.header-2 {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /*space-between will maintain proper space between*/
+  padding: 2rem 9%;
+  /* addtional css added  */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* css for navbar starts   */
+.header-2 .navbar a {
+  padding: 0.5rem 1.5rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  color: var(--black);
+}
+
+/* hover effect for navbar in header-2  */
+.header-2 .navbar a:hover {
+  background: var(--green);
+  color: #fff;
+}
+
+/* css for header-2 icons anchor  */
+.header-2 .icons a {
+  font-size: 2.5rem;
+  color: var(--black);
+  padding-left: 1rem;
+}
+/* hover effect for icons  */
+.header-2 .icons a:hover {
+  color: var(--green);
+}
+/* css for nav bar ends  */
+
+/* css for menu bar starts  */
+#menu-bar {
+  font-size: 3rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--black);
+  padding: 0.8rem 1.5rem;
+  color: var(--black);
+  cursor: pointer;
+  display: none;
+}
+/* css for menu bar ends  */
+
+/* for home class begins  */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* for images  */
+.home .image {
+  flex: 1 1 40rem;
+  padding-top: 5rem;
+}
+.home .image img {
+  width: 100%;
+}
+.home .content {
+  flex: 1 1 40rem;
+  padding: 2rem;
+}
+
+.home .content span {
+  font-size: 3rem;
+  color: #666;
+}
+.home .content h3 {
+  font-size: 5rem;
+  color: var(--black);
+}
+
+/* css for home class ends  */
+
+/* css fro banner section starts */
+.banner-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.banner-container .banner {
+  flex: 1 1 40rem;
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-container .banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.banner-container .banner .content {
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  transform: translateY(-50%);
+}
+.banner-container .banner .content h3 {
+  font-size: 3rem;
+  color: var(--black);
+}
+.banner-container .banner .content p {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* special rotating effect for banner image  */
+.banner-container .banner:hover img {
+  transform: scale(1.2) rotate(-5deg);
+}
+/* css for banner sections ends  */
+
+/* css for testimonials  */
+#testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.testimonial-heading {
+  letter-spacing: 1px;
+  margin: 30px 0px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-heading h1 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  background-color: var(--green);
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 50px;
+}
+
+.testimonial-heading span {
+  font-size: 1.3rem;
+  color: var(--green);
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.testimonial-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.testimonial-box {
+  width: 500px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+.name-user {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-user strong {
+  color: var(--black);
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+.name-user span {
+  color: gray;
+  font-size: 0.8rem;
+}
+.reviews {
+  color: gold;
+}
+.box-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.client-comment p {
+  font-size: 20px;
+}
+.testimonial-box:hover {
+  transform: translateY(-10px);
+  transition: all ease 0.3s;
+}
+
+/* css for testimonials ends */
+
+/* css for deal section begins  */
+.deal {
+  background: url(/images/HomePageImages/coke-1.jpg) no-repeat;
+
+  background-position: center;
+  background-size: contain;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.deal .content {
+  max-width: 50rem;
+}
+/* css for content class title class  */
+.deal .content .title {
+  font-size: 4rem;
+  color: var(--black);
+}
+/* css for paragraph  */
+.deal .content p {
+  font-size: 1.7rem;
+  padding: 1rem 0;
+  color: #333;
+}
+
+/* css for count down check spelling  */
+.deal .content .count-down {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+/* css for box in count down  */
+.deal .content .count-down .box {
+  width: 9rem; /*size of div box also matters / effect font size css*/
+  text-align: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+
+/* css for h3 in box inside count-down  */
+.deal .content .count-down .box h3 {
+  color: var(--black);
+  background: #fff;
+  height: 7rem;
+  line-height: 7rem;
+  width: 100%;
+  font-size: 5rem;
+}
+
+/* css for span inside box  */
+.deal .content .count-down .box span {
+  display: block; /*display block also helps to keep elements inside box*/
+  background: var(--black);
+  color: #fff;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+/* css for deal section ends  */
+
+/* css for contact section form begins  */
+.contact form {
+  text-align: center;
+  padding: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+
+/* for inputbox  */
+.contact form .inputbox {
+  display: flex;
+  /* justify-content: space-evenly; */
+  justify-content: space-between; /*space-between space elements form starting point*/
+  flex-wrap: wrap;
+}
+
+/* css for input and form textarea  */
+.contact form .inputbox input,
+.contact form textarea {
+  padding: 1rem;
+  font-size: 1.7rem;
+  background: #f7f7f7;
+  text-transform: none;
+  margin: 1rem 0;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  width: 49%; /*width is given to input and textarea*/
+}
+/* css for form textarea only  */
+.contact form textarea {
+  height: 20rem;
+  resize: none;
+  width: 100%;
+}
+
+/* css for contact section form ends  */
+
+/* css for newletter section  */
+.newsletter {
+  /* background: url(/images/cart3.png) no-repeat; */
+  background-color: #27ae60;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+/* css for h3  */
+.newsletter h3 {
+  font-size: 3rem;
+  color: var(--black);
+}
+/* css for form  */
+.newsletter form {
+  /* min-width: 55rem; */
+  max-width: 55rem;
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.1);
+}
+/* css for form input class box  */
+.newsletter form .box {
+  width: 100%;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.7rem;
+  color: #333;
+  text-transform: none;
+}
+/* css for submit button  */
+.newsletter form .btn {
+  margin-top: 0;
+}
+
+/* css for newletter section ends  */
+
+/* css for footer section  */
+.footer .box-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+/* css for box links  */
+.footer .box-container .box {
+  padding: 1rem 0;
+  flex: 1 1 25rem;
+}
+/* css for share class  */
+.footer .box-container .box .share a {
+  padding: 0;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  text-align: center;
+}
+/* css for h3  */
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+/* css for p  */
+.footer .box-container .box p {
+  font-size: 1.3rem;
+  color: #666;
+  padding: 0.7rem 0;
+}
+
+.footer .box-container .box .links {
+  padding: 1rem 0;
+}
+/* css for links  */
+.footer .box-container .box .links a {
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 1.7rem;
+  color: #333;
+}
+/* hover effect for links in footer  */
+/* no space in hove :  */
+.footer .box-container .box .links a:hover {
+  text-decoration: underline;
+  color: var(--green);
+}
+/* for credit section of footer  */
+.footer .credit {
+  padding: 2.5rem 1rem;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+/* for span inside credit class in footer  */
+.footer .credit span {
+  color: var(--green);
+}
+
+/* this much for footer section css  */
+
+/* service container  */
+
+
+/* service container css ends */
+.image-slider {
+  position: relative;
+  height: 300px; /* Adjust height as needed */
+  overflow: hidden;
+  padding-top: 500px;
+  padding-bottom: 300px;
+}
+
+.image-slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s;
+  
+}
+
+.image-slider img:first-child {
+  opacity: 1;
+}

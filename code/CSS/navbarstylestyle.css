@@ -1,0 +1,450 @@
+/* importing google fonts  */
+
+/* global variables   */
+:root {
+    --green: #27ae60;
+    --black: #2c2c54;
+
+}
+
+
+/* css for all elements  */
+* {
+    font-family: "Nunito", sans-serif;
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+}
+
+/* css for changing color when selecting text  */
+*::selection {
+    background: var(--green);
+    color: #fff;
+}
+
+/* for html element  */
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6.5rem;
+    scroll-behavior: smooth;
+
+}
+
+/* css for section of home  */
+section {
+    padding: 2rem 9%;
+}
+
+/* for btn class  */
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--green);
+    color: #fff;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* hover effect for btn  */
+.btn:hover {
+    background: var(--black);
+}
+
+
+
+/* css for class header-1  */
+
+.header-1 {
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*space-between will maintain proper space between*/
+    padding: 2rem 9%;
+
+
+
+}
+
+/* css for logo  */
+.logo {
+    color: var(--black);
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+/* css for icons inside logo class   */
+.logo .icons i {
+    padding-right: .5rem;
+    color: var(--green);
+}
+
+/* for icons  */
+.icons {
+    padding-left: 20rem;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-evenly; */
+}
+
+/* css for header-1 class search box  */
+.header-1 .search-box-container {
+    display: flex;
+    height: 5rem;
+}
+
+/* css for search box  */
+.header-1 .search-box-container #search-box {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    /*no space for rem*/
+    font-size: 2rem;
+    color: #333;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    text-transform: none;
+
+}
+
+/* spelling mistakes of class name will discard css effect  */
+.header-1 .search-box-container label {
+    height: 100%;
+    width: 8rem;
+    font-size: 2.5rem;
+    line-height: 5rem;
+    color: #fff;
+    background: var(--green);
+    text-align: center;
+    cursor: pointer;
+
+}
+
+/* hover effect for search icons  */
+.header-1 .search-box-container label:hover {
+    background: var(--black);
+}
+
+/* css for header-2 for navigation bar  */
+.header-2 {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*space-between will maintain proper space between*/
+    padding: 2rem 9%;
+    /* addtional css added  */
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    position: relative;
+
+
+}
+
+/* css for navbar starts   */
+.header-2 .navbar a {
+    padding: .5rem 1.5rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    color: var(--black);
+}
+
+/* hover effect for navbar in header-2  */
+.header-2 .navbar a:hover {
+    background: var(--green);
+    color: #fff;
+}
+
+/* css for header-2 icons anchor  */
+.header-2 .icons a {
+    font-size: 2.5rem;
+    color: var(--black);
+    padding-left: 1rem;
+
+}
+
+/* hover effect for icons  */
+.header-2 .icons a:hover {
+    color: var(--green);
+}
+
+/* css for nav bar ends  */
+
+/* css for menu bar starts  */
+#menu-bar {
+    font-size: 3rem;
+    border-radius: .5rem;
+    border: .1rem solid var(--black);
+    padding: .8rem 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+    display: none;
+}
+
+/* css for menu bar ends  */
+
+
+
+
+/* for category section    */
+.heading {
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+    padding: 1rem;
+    font-size: 3.5rem;
+    padding-bottom: 2rem;
+}
+
+.heading span {
+    color: var(--green);
+    text-transform: uppercase;
+}
+
+.category .box-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
+
+
+}
+
+.category .box-container .box {
+    border: .1rem solid rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+    text-align: center;
+    padding: 2rem;
+    flex: 1 1 25rem;
+
+}
+
+.category .box-container .box img {
+    width: 20rem;
+    margin: 5rem 0;
+}
+
+.category .box-container .box h3 {
+    font-size: 3.5rem;
+    color: var(--black);
+}
+
+.category .box-container .box p {
+    font-size: 2rem;
+    color: #666;
+    padding: .5 rem 0;
+}
+
+.category .box-container .box .btn {
+    display: block
+}
+
+.heading {
+    font-size: 3rem;
+}
+
+/* css for category ends  */
+
+/* for product  */
+.product .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.product .box-container .box {
+    flex: 1 1 30rem;
+    text-align: center;
+    padding: 2rem;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+    overflow: hidden;
+    position: relative;
+
+}
+
+/* for product image  */
+.product .box-container .box img {
+    height: 20rem;
+}
+
+/* for product discount %  */
+.product .box-container .box .discount {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: rgba(0, 255, 0, .1);
+    color: var(--green);
+    padding: .7rem 1rem;
+    font-size: 2rem;
+}
+
+/* css for product page icons top */
+.product .box-container .box .icons {
+    position: absolute;
+    top: .5rem;
+    right: -6rem;
+}
+
+/* hover effect of icons in products and : : can also may cause css not to work */
+.product .box-container .box:hover .icons {
+    right: 1rem;
+}
+
+/* for product icons a tag  */
+.product .box-container .box .icons a {
+    display: block;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    color: var(--black);
+    background: rgba(0, 255, 0, .1);
+    border-radius: 50%;
+    margin-top: .7rem;
+}
+
+.product .box-container .box .icons a:hover {
+    background: var(--green);
+    color: #fff;
+}
+
+/* for css priduct name heading  */
+.product .box-container .box h3 {
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+/* giving gold color to star rattings  */
+.product .box-container .box .stars i {
+    padding: 1rem .1rem;
+    font-size: 1.7rem;
+    color: gold;
+}
+
+/* for product price  */
+.product .box-container .box .price {
+    font-size: 2rem;
+    color: #333;
+    padding: .5rem 0;
+}
+
+/* css for span of product price*/
+.product .box-container .box .price span {
+    font-size: 1.5rem;
+    color: #999;
+    text-decoration: line-through;
+}
+
+/* css for product quantity  */
+.product .box-container .box .quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+
+}
+
+/* for quantity  */
+.product .box-container .box .quantity span {
+    padding: 0 .7rem;
+    font-size: 1.7rem;
+}
+
+/* for input box  */
+.product .box-container .box .quantity input {
+    border: .1rem solid rgba(0, 0, 0, .3);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--black);
+    padding: .5rem;
+    background: rgba(0, 0, 0, .05);
+}
+
+/* for button in product  */
+.product .box-container .box .btn {
+    display: black;
+}
+
+
+/* css for footer section  */
+.footer .box-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* css for box links  */
+.footer .box-container .box {
+    padding: 1rem 0;
+    flex: 1 1 25rem;
+}
+
+/* css for share class  */
+.footer .box-container .box .share a {
+    padding: 0;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+/* css for h3  */
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+/* css for p  */
+.footer .box-container .box p {
+    font-size: 1.3rem;
+    color: #666;
+    padding: .7rem 0;
+}
+
+.footer .box-container .box .links {
+    padding: 1rem 0;
+}
+
+/* css for links  */
+.footer .box-container .box .links a {
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.7rem;
+    color: #333;
+}
+
+/* hover effect for links in footer  */
+/* no space in hove :  */
+.footer .box-container .box .links a:hover {
+    text-decoration: underline;
+    color: var(--green);
+}
+
+/* for credit section of footer  */
+.footer .credit {
+    padding: 2.5rem 1rem;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* for span inside credit class in footer  */
+.footer .credit span {
+    color: var(--green);
+}
+
+.footer {
+    background-color: bisque;
+}
+
+/* this much for footer section css  */

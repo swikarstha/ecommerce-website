@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cauliflower</title>
+    <!-- logo to display in tab  -->
+    <link rel="icon" href="/image/Logo.png" type="image/x-icon">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- linking css  -->
+    <link rel="stylesheet" href="/code/CSS/productstyle.css">
+    <style>
+        .logo img {
+            width: 50px;
+            /* set the width of the image */
+
+            height: 50px;
+            /* set the height of the image */
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- header section begins  -->
+    <header>
+
+        <div class="header-1">
+            <!-- remember closing i tag  -->
+            <a href="/code/HTML/index.html" class="logo">
+                <img src="/image/Logo.png" alt="logo">
+                online grocery xpress
+            </a>
+
+            <form action="" class="search-box-container">
+                <input type="search" id="search-box" placeholder="search here...">
+
+                <label for="search-box" class="fas fa-search"></label>
+
+            </form>
+
+        </div>
+
+        <div class="header-2">
+            <!-- menu bar starts inside header-2 div  -->
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <!-- navigation open  -->
+            <nav class="navbar">
+                <a href="/code/HTML/index.html">home</a>
+                <a href="/code/HTML/prabeshportfolio.html">product</a>
+                <a href="/code/HTML/blogindex.html">blog</a>
+                <a href="/code/HTML/researchindex.html">research</a>
+                <a href="/code/HTML/aboutusindex.html">about us</a>
+            </nav>
+            <!-- navigation close  -->
+
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"><a>
+                        <a href="#" class="fas fa-heart"><a>
+                                <a href="/code/HTML/LoginForm.html" class="fas fa-user-circle"><a>
+            </div>
+
+        </div>
+    </header>
+    <!-- header section ends  -->
+
+    <section class="product" id="product-section">
+        <h1 class="heading">Cauli<span>Flower</span></h1>
+        <div class="box-container">
+            <!--cauliflower-->
+            <div class="box">
+                <img src="/image/Cauliflower Image.png" alt="cauliflower" style="width: 300px;height: 300px;">
+                <h3>Cauliflower</h3>
+                <h1>
+                    Growing to a height of around 0.5 meters (1.5 feet), cauliflowers are annual plants with broad,
+                    rounded leaves. They are also high in vitamin C, which is beneficial to the health of the skin,
+                    gums, and healing process. The cabbage flower gave rise to the cauliflower plant. Originating in
+                    Asia Minor, it first bore a resemblance to kale or collard greens.
+                </h1>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="discount">-21%</span>
+                <div class="price">Rs.99<sub>per kg</sub> <span>Rs.125</span>
+                    <br> <br>
+                    <div class="quantity-selector">
+                        <label for="quantity"> Quantity:</label>
+                        <input type="number" id="quantity" name="Quantity" min="0" value="0" />
+                    </div>
+                    <br>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- this is start of footer section   -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <!-- clickable logo -->
+                <a href="#" class="logo">
+                    <img src="/image/Logo.png" alt="logo">
+                    online grocery xpress
+                </a>
+                <p>Welcome to Grocery Xpress, our online grocery shop that delivers the freshest and most extensive
+                    selection of items straight to your home.
+                    Our website was created with convenience and comfort in mind, allowing you to shop for all of your
+                    grocery requirements in one location.
+                    Online Grocery Xpress provides a simple platform for consumers to choose and buy a variety of food
+                    online</p>
+                <!-- link of social media site  -->
+                <div class="share">
+                    <a href="#" class="btn fab fa-facebook-f"></a>
+                    <a href="#" class="btn fab fa-twitter"></a>
+                    <a href="#" class="btn fab fa-instagram"></a>
+                    <a href="#" class="btn fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <!-- next child div for location -->
+            <div class="box">
+                <h3>our location</h3>
+                <div class="links">
+                    <a href="#">Kathmandu</a>
+                    <a href="#">Pokhara</a>
+                    <a href="#">Biratnagar</a>
+                    <a href="#">damak </a>
+                    <a href="#">dharan </a>
+                </div>
+            </div>
+            <!-- next child div for navbar -->
+            <div class="box">
+                <h3>quick links</h3>
+                <div class="links">
+                    <a href="/code/HTML/index.html">home</a>
+                    <a href="/code/HTML/productindex.html">product </a>
+                    <a href="/code/HTML/blogindex.html">blog </a>
+                    <a href="/code/HTML/researchindex.html">research </a>
+                    <a href="/code/HTML/aboutusindex.html">about us </a>
+                </div>
+            </div>
+            <!-- next child div for app download -->
+            <div class="box">
+                <h3>download app</h3>
+                <div class="links">
+                    <a href="#">google play</a>
+                    <a href="#">window xp</a>
+                    <a href="#">app store</a>
+                </div>
+            </div>
+
+        </div>
+
+        <h1 class="credit"> created by <span> online grocery xpress</span> | all right reserved!</h1>
+    </section>
+
+    <script src="script.js"></script>
+</body>

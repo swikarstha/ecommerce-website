@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>our blog - Online Grocery Xpress</title>
+
+	<!-- logo to display in tab  -->
+	<link rel="icon" href="/image/Logo.png" type="image/x-icon">
+
+	<!-- link for navbar css  -->
+	<link rel="stylesheet" href="/code/CSS/navbarstylestyle.css">
+
+
+
+
+	<!-- font awesome cdn link  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+	<style>
+		.logo img {
+			width: 50px;
+			/* set the width of the image */
+
+			height: 50px;
+			/* set the height of the image */
+
+		}
+
+		.category .box-container .box img {
+			width: 20rem;
+			margin: 5rem 0;
+			transition: transform .3s ease-in-out;
+		}
+
+		.category .box-container .box:hover img {
+			transform: scale(1.1);
+		}
+
+		.category .box-container .box {
+			border: .1rem solid rgba(0, 0, 0, .3);
+			border-radius: .5rem;
+			text-align: center;
+			padding: 2rem;
+			flex: 1 1 25rem;
+			transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
+		}
+
+		.category .box-container {
+			font-size: 35px;
+		}
+
+		.category .heading {
+			font-size: 50px;
+		}
+
+		.category .box-container .box .post-description {
+			font-size: 25px;
+			text-align: justify;
+		}
+
+		.category .box-container .box:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+		}
+
+
+		/* for btn class  */
+
+
+		.btn {
+			display: inline-block;
+			margin-top: 1rem;
+			background: var(--green);
+			color: #fff;
+			padding: .8rem 3rem;
+			font-size: 1.7rem;
+			text-align: center;
+			cursor: pointer;
+		}
+
+
+		/* hover effect for btn  */
+		.btn:hover {
+			background: var(--black);
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- header section begins  -->
+	<header>
+
+		<div class="header-1">
+			<!-- remember closing i tag  -->
+			<a href="/code/HTML/index.html" class="logo">
+				<img src="/image/Logo.png" alt="logo">
+				online grocery xpress
+			</a>
+
+			<form action="" class="search-box-container">
+				<input type="search" id="search-box" placeholder="search here...">
+
+				<label for="search-box" class="fas fa-search"></label>
+
+			</form>
+
+		</div>
+
+		<div class="header-2">
+			<!-- menu bar starts inside header-2 div  -->
+			<div id="menu-bar" class="fas fa-bars"></div>
+			<!-- navigation open  -->
+			<nav class="navbar">
+				<a href="/code/HTML/index.html">home</a>
+				<a href="/code/HTML/productindex.html">product</a>
+				<a href="/code/HTML/blogindex.html">blog</a>
+				<a href="/code/HTML/researchindex.html">research</a>
+				<a href="/code/HTML/aboutusindex.html">about us</a>
+			</nav>
+			<!-- navigation close  -->
+
+			<div class="icons">
+				<a href="#" class="fas fa-shopping-cart"><a>
+						<a href="#" class="fas fa-heart"><a>
+								<a href="/code/HTML/LoginForm.html" class="fas fa-user-circle"><a>
+			</div>
+
+		</div>
+	</header>
+	<!-- header section ends  -->
+
+	<section class="category" id="category" style="height: 50%;width: 100%;">
+
+		<h1 class="heading">Our <span>Popular Blog</span></h1>
+		<div class="box-container">
+			<!-- blog 1  -->
+
+			<div class="box">
+				<h1>
+					<h2>Impact of Technology in daily<span style="color:  #27ae60;"> life and Business</span></h2><br>
+				</h1>
+
+				<img src="/image/business.png" alt="images" style="width: 300px;">
+				<img src="/image/technologyingrocery.png" alt="images" style="width: 300px;">
+				<img src="/image/people.png" alt="images" style="width: 300px;">
+
+				<p class="post-description">
+					Technology has transformed the grocery industry in numerous ways, revolutionizing both the shopping
+					experience and operational efficiency. With the advent of e-commerce, customers can now conveniently
+					browse and purchase groceries online through dedicated platforms and mobile apps, enjoying doorstep
+					delivery services. Moreover, .....
+				</p>
+
+			</div>
+
+		</div>
+
+		<a href="/code/HTML/technologyblog.html" class="btn">Read more</a>
+
+	</section>
+
+
+
+	<!-- this is start of footer section   -->
+	<section class="footer" style="background-color: bisque;">
+
+		<div class="box-container">
+
+			<div class="box">
+				<!-- clickable logo -->
+				<a href="#" class="logo">
+					<img src="/image/Logo.png" alt="logo">
+					online grocery xpress
+				</a>
+				<p>Welcome to Grocery Xpress, our online grocery shop that delivers the freshest and most extensive
+					selection of items straight to your home.
+					Our website was created with convenience and comfort in mind, allowing you to shop for all of your
+					grocery requirements in one location.
+					Online Grocery Xpress provides a simple platform for consumers to choose and buy a variety of food
+					online.</p>
+				<!-- link of social media site  -->
+				<div class="share">
+					<a href="#" class="btn fab fa-facebook-f"></a>
+					<a href="#" class="btn fab fa-twitter"></a>
+					<a href="#" class="btn fab fa-instagram"></a>
+					<a href="#" class="btn fab fa-linkedin"></a>
+				</div>
+			</div>
+
+			<!-- next child div for location -->
+			<div class="box">
+				<h3>our location</h3>
+				<div class="links">
+					<a href="#">Kathmandu</a>
+					<a href="#">Pokhara</a>
+					<a href="#">Biratnagar</a>
+					<a href="#">Damak</a>
+					<a href="#">Dharan</a>
+				</div>
+			</div>
+			<!-- next child div for navbar -->
+			<div class="box">
+				<h3>quick links</h3>
+				<div class="links">
+					<a href="/code/HTML/index.html">home</a>
+					<a href="/code/HTML/productindex.html">product </a>
+					<a href="/code/HTML/blogindex.html">blog </a>
+					<a href="/code/HTML/researchindex.html">research </a>
+					<a href="/code/HTML/aboutusindex.html">about us</a>
+				</div>
+			</div>
+			<!-- next child div for app download -->
+			<div class="box">
+				<h3>download app</h3>
+				<div class="links">
+					<a href="#">google play</a>
+					<a href="#">window xp</a>
+					<a href="#">app store</a>
+				</div>
+			</div>
+
+		</div>
+
+
+		<h1 class="credit"> created by <span> online grocery xpress</span> | all right reserved!</h1>
+	</section>
+
+</body>
+
+
+
+</html>

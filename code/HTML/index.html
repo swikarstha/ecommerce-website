@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- using meta tag  -->
+    <meta name="description" content="Online Grocery Store Website">
+    <meta name="Keywords" content="Grocery store website">
+    <meta name="author" content="Group-7">
+    <!-- using meta tag  -->
+    <title>Home Page - Online Grocery Xpress</title>
+
+    <!-- adding logo in tab check spelling of icons -->
+    <link rel="icon" href="/image/Logo.png" type="image/x-icon">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- external css  link  -->
+    <link rel="stylesheet" href="/code/CSS/homestyle.css">
+
+    <!-- linking external js  -->
+    <script src="/code/JS/script.js"></script>
+
+    <!-- internal cs  -->
+    <style>
+        /* for category section    */
+
+        .heading {
+            text-align: center;
+            color: var(--black);
+            text-transform: uppercase;
+            padding: 1rem;
+            font-size: 3.5rem;
+            padding-bottom: 2rem;
+        }
+
+        .heading span {
+            color: var(--green);
+            text-transform: uppercase;
+        }
+
+        .category .box-container {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+
+        .category .box-container .box {
+            border: .1rem solid rgba(0, 0, 0, .3);
+            border-radius: .5rem;
+            text-align: center;
+            padding: 2rem;
+            flex: 1 1 25rem;
+        }
+
+        .category .box-container .box img {
+            width: 20rem;
+            margin: 5rem 0;
+        }
+
+        .category .box-container .box h3 {
+            font-size: 3.5rem;
+            color: var(--black);
+        }
+
+        .category .box-container .box p {
+            font-size: 2rem;
+            color: #666;
+            padding: .5 rem 0;
+        }
+
+        .category .box-container .box .btn {
+            display: block
+        }
+
+        .heading {
+            font-size: 3rem;
+        }
+
+        /* css for category ends  */
+
+        /* for product  */
+        .product .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .product .box-container .box {
+            flex: 1 1 30rem;
+            text-align: center;
+            padding: 2rem;
+            border: .1rem solid rgba(0, 0, 0, .3);
+            border-radius: .5rem;
+            overflow: hidden;
+            position: relative;
+
+        }
+
+        /* for product image  */
+        .product .box-container .box img {
+            height: 20rem;
+        }
+
+        /* for product discount %  */
+        .product .box-container .box .discount {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: rgba(0, 255, 0, .1);
+            color: var(--green);
+            padding: .7rem 1rem;
+            font-size: 2rem;
+        }
+
+        /* css for product page icons top */
+        .product .box-container .box .icons {
+            position: absolute;
+            top: .5rem;
+            right: -6rem;
+        }
+
+        /* hover effect of icons in products and : : can also may cause css not to work */
+        .product .box-container .box:hover .icons {
+            right: 1rem;
+        }
+
+        /* for product icons a tag  */
+        .product .box-container .box .icons a {
+            display: block;
+            height: 4.5rem;
+            width: 4.5rem;
+            line-height: 4.5rem;
+            font-size: 1.7rem;
+            color: var(--black);
+            background: rgba(0, 255, 0, .1);
+            border-radius: 50%;
+            margin-top: .7rem;
+        }
+
+        .product .box-container .box .icons a:hover {
+            background: var(--green);
+            color: #fff;
+        }
+
+        /* for css priduct name heading  */
+        .product .box-container .box h3 {
+            color: var(--black);
+            font-size: 2.5rem;
+        }
+
+        /* giving gold color to star rattings  */
+        .product .box-container .box .stars i {
+            padding: 1rem .1rem;
+            font-size: 1.7rem;
+            color: gold;
+        }
+
+        /* for product price  */
+        .product .box-container .box .price {
+            font-size: 2rem;
+            color: #333;
+            padding: .5rem 0;
+        }
+
+        /* css for span of product price*/
+        .product .box-container .box .price span {
+            font-size: 1.5rem;
+            color: #999;
+            text-decoration: line-through;
+        }
+
+        /* css for product quantity  */
+        .product .box-container .box .quantity {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 1rem;
+            padding-bottom: .5rem;
+
+        }
+
+        /* for quantity  */
+        .product .box-container .box .quantity span {
+            padding: 0 .7rem;
+            font-size: 1.7rem;
+        }
+
+        /* for input box  */
+        .product .box-container .box .quantity input {
+            border: .1rem solid rgba(0, 0, 0, .3);
+            font-size: 1.5rem;
+            font-weight: bolder;
+            color: var(--black);
+            padding: .5rem;
+            background: rgba(0, 0, 0, .05);
+        }
+
+        /* for button in product  */
+        .product .box-container .box .btn {
+            display: black;
+        }
+
+
+        /* style for logo  image */
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+
+
+
+
+        img {
+            width: 90%;
+            height: 500px;
+            /* height: 50%; */
+            /* height: 1000px; */
+
+        }
+
+
+        /* service section  */
+
+
+        /* for hero section  */
+        .container {
+            background-color: var(--black);
+
+        }
+
+        .container .box {
+            background-image: url(/images/hero7.png);
+            color: #fff;
+            padding-top: 100px;
+            padding-bottom: 580px;
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-blend-mode: multiply;
+
+        }
+
+        /* for hero section ends css */
+
+
+        /* css for testimonial section  */
+        .testimonial-box-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            /* Adjust the gap between testimonial boxes */
+        }
+
+        .testimonial-box {
+            background-color: #f9f9f9;
+            /* Set background color for testimonial boxes */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Add a subtle box shadow */
+            width: 300px;
+            /* Set width for each testimonial box */
+        }
+
+        .box-top {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-img img {
+            width: 50px;
+            /* Set width for profile images */
+            border-radius: 50%;
+            /* Make profile images circular */
+            margin-right: 10px;
+        }
+
+        .name-user strong {
+            font-size: 1.2rem;
+            color: #333;
+            /* Set color for name */
+        }
+
+        .name-user span {
+            color: #888;
+            /* Set color for username */
+        }
+
+        .reviews {
+            margin-left: auto;
+        }
+
+        .reviews i {
+            color: #ffc107;
+            /* Set color for star icons */
+        }
+
+        .client-comment {
+            color: #555;
+            /* Set color for client comments */
+            line-height: 1.5;
+        }
+
+        /* css for testimonial section ends  */
+
+        /* css for service section starts  */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .service-box {
+            width: 300px;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        /* css for service section ends */
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header section begins  -->
+    <header>
+
+        <div class="header-1">
+
+            <a href="/code/HTML/index.html" class="logo" target="_blank">
+                <img src="/image/Logo.png" alt="logo">
+                online grocery xpress
+            </a>
+
+
+            <form action="" class="search-box-container">
+                <input type="search" id="search-box" placeholder="search here...">
+
+                <label for="search-box" class="fas fa-search"></label>
+
+            </form>
+
+        </div>
+
+        <div class="header-2">
+            <!-- menu bar starts inside header-2 div  -->
+            <div id="menu-bar" class="fas fa-bars"></div>
+
+            <!-- navigation open  -->
+            <div class="nav">
+                <nav class="navbar">
+
+                    <a href="/code/HTML/index.html" target="_blank">home</a>
+                    <a href="/code/HTML/productindex.html" target="_blank">product</a>
+                    <a href="/code/HTML/blogindex.html" target="_blank">blog</a>
+                    <a href="/code/HTML/researchindex.html" target="_blank">research</a>
+                    <a href="/code/HTML/aboutusindex.html" target="_blank"> about us</a>
+
+                </nav>
+            </div>
+
+            <!-- navigation close  -->
+
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart" target="_blank"><a>
+                        <a href="#" class="fas fa-heart" target="_blank"><a>
+                                <a href="/code/HTML/LoginForm.html" class="fas fa-user-circle" target="_blank"><a>
+
+
+            </div>
+        </div>
+
+    </header>
+    <!-- header section ends  -->
+
+
+
+
+    <div class="image-slider">
+        <img src="/image/bg1.png" alt="Image 1">
+        <img src="/image/bg3.png" alt="Image 3">
+        <img src="/image/bg4.png" alt="Image 4">
+
+        <!-- Add more images here -->
+    </div>
+
+    <!-- start of product offer section  -->
+
+    <section class="product" id="product-section">
+        <h1 class="heading">Special<span>Offers</span></h1>
+        <div class="box-container">
+            <!--apple-->
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <img src="/image/Apple Image.jpg" alt="apple" style="width: 200px;height: 200px;">
+                <h3>Apple</h3>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="discount">-12%</span>
+                <div class="price">Rs.180<sub>per kg</sub> <span>Rs.201</span>
+                    <br> <br>
+                    <div class="quantity-selector">
+                        <label for="quantity"> Quantity:</label>
+                        <input type="number" id="quantity" name="Quantity" min="0" value="0" />
+                    </div>
+                    <br>
+                    <a href="#" class="btn">add to cart</a> <br> <br>
+                    <a href="/code/HTML/apple.html" class="btn">Read More...</a>
+                </div>
+            </div>
+            <!--potato-->
+            <div class="box">
+
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <img src="/image/Potato Image.png" alt="mango" style="width: 200px;height: 200px;">
+                <h3>Potato</h3>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="discount">-33%</span>
+                <div class="price">Rs 50<sub>per kg</sub> <span>Rs.80</span>
+                    <br>
+                    <div class="quantity-selector">
+                        <label for="quantity"> Quantity:</label>
+                        <input type="number" id="quantity" name="Quantity" min="0" value="0" />
+                    </div>
+                    <br>
+                    <a href="#" class="btn">add to cart</a> <br> <br>
+                    <a href="/code/HTML/potato.html" class="btn">Read More...</a>
+                </div>
+            </div>
+            <!--frooti-->
+            <div class="box">
+
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <img src="/image/Frooti Image.png" alt="lychee" style="width: 200px;height: 200px;">
+                <h3>Frooti</h3>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="discount">-33%</span>
+                <div class="price">Rs.30<sub>per 200ml</sub> <span>Rs.40</span>
+                    <br> <br>
+                    <div class="quantity-selector">
+                        <label for="quantity"> Quantity:</label>
+                        <input type="number" id="quantity" name="Quantity" min="0" value="0" />
+                    </div>
+                    <br>
+                    <a href="#" class="btn">add to cart</a> <br> <br>
+                    <a href="/code/HTML/frooti.html" class="btn">Read More...</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end  of product offer section  -->
+
+
+
+    <!-- contact section form begins  -->
+
+
+    <section class="contact" id="contact" style="margin: 200px;">
+
+        <h1 class="heading"><span>contact</span>us</h1>
+
+
+        <!-- form begins  -->
+        <form name="contactform" onsubmit="validatecontact()">
+            <h1 style="display: inline;">Date : </h1>
+            <p id="date" class="btn"></p>
+            <!-- div for input -->
+            <div class="inputbox">
+                <input type="text" placeholder="name" name="name" required>
+
+                <input type="email" placeholder="email" name="email" required>
+            </div>
+            <!-- next div  -->
+
+            <!-- text area  -->
+            <textarea name="" id="" cols="30" rows="10" placeholder="message" name="message" required></textarea>
+            <!-- rember to keep value as send message else no effect  -->
+            <input type="submit" value="send message" class="btn">
+
+
+        </form>
+        <!-- form ends  -->
+    </section>
+    <!-- contact section form ends -->
+
+
+
+
+    <!-- testimonials section  -->
+    <section id="testimonials">
+        <!-- heading  -->
+
+        <div class="testimonial-heading">
+            <span>testimonials</span>
+            <h1>Our Customers FeedBack</h1>
+        </div>
+
+
+
+        <!-- testimonials-box-container  -->
+        <div class="testimonial-box-container">
+
+            <!-- box-1  -->
+            <div class="testimonial-box">
+                <!-- top  -->
+                <div class="box-top">
+                    <!-- profile  -->
+                    <div class="profile">
+                        <!-- img  -->
+                        <div class="profile-img">
+                            <img src="/image/client2.png" alt="">
+                        </div>
+                        <!-- name and username  -->
+                        <div class="name-user">
+                            <strong>Rajamati Shrestha</strong>
+                            <span>@rajamatishrestha</span>
+                        </div>
+                    </div>
+                    <!-- reviews  -->
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <!-- comments  -->
+                <div class="client-comment">
+                    <p>I am satisfied with the products and services provided by Online Grocery Xpress . I would like to
+                        suggest everyone to shop in this online grocery store. </p>
+                </div>
+            </div>
+
+            <!-- box-2 -->
+            <div class="testimonial-box">
+                <!-- top  -->
+                <div class="box-top">
+                    <!-- profile  -->
+                    <div class="profile">
+                        <!-- img  -->
+                        <div class="profile-img">
+                            <img src="/image/client1.png" alt="">
+                        </div>
+                        <!-- name and username  -->
+                        <div class="name-user">
+                            <strong>Shirnkala Maharjan</strong>
+                            <span>@shirnkalamaharjan</span>
+                        </div>
+                    </div>
+                    <!-- reviews  -->
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <!-- comments  -->
+                <div class="client-comment">
+                    <p>Online Grocery Store is my first choice for online grocery shopping.
+                        Whole team is dedicated in providing quality services to their clients.
+                    </p>
+                </div>
+            </div>
+            <!-- box-3  -->
+            <div class="testimonial-box">
+                <!-- top  -->
+                <div class="box-top">
+                    <!-- profile  -->
+                    <div class="profile">
+                        <!-- img  -->
+                        <div class="profile-img">
+                            <img src="/image/client4.png" alt="">
+                        </div>
+                        <!-- name and username  -->
+                        <div class="name-user">
+                            <strong>Dev Tharu</strong>
+                            <span>@devtharu</span>
+                        </div>
+                    </div>
+                    <!-- reviews  -->
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <!-- comments  -->
+                <div class="client-comment">
+                    <p>Online Grocery Xpress is 100% reliable grocery store which always aims at serving their clients
+                        as much as possible.
+                        I am satisfied with their servies and products. </p>
+                </div>
+            </div>
+            <!-- box-4 -->
+            <div class="testimonial-box">
+                <!-- top  -->
+                <div class="box-top">
+                    <!-- profile  -->
+                    <div class="profile">
+                        <!-- img  -->
+                        <div class="profile-img">
+                            <img src="/image/client6.png" alt="">
+                        </div>
+                        <!-- name and username  -->
+                        <div class="name-user">
+                            <strong>Hem Bahadur Karki</strong>
+                            <span>@hembahadurkarki</span>
+                        </div>
+                    </div>
+                    <!-- reviews  -->
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <!-- comments  -->
+                <div class="client-comment">
+                    <p>The quality , services and time on delivery by the entire team of Online
+                        grocery xpress is worthy and suggest them to always provide such a better service to the
+                        customers. </p>
+                </div>
+            </div>
+
+            <!-- box-4 -->
+            <div class="testimonial-box">
+                <!-- top  -->
+                <div class="box-top">
+                    <!-- profile  -->
+                    <div class="profile">
+                        <!-- img  -->
+                        <div class="profile-img">
+                            <img src="/image/client7.png" alt="">
+                        </div>
+                        <!-- name and username  -->
+                        <div class="name-user">
+                            <strong>Bikas Nemhang</strong>
+                            <span>@bikashnemhang</span>
+                        </div>
+                    </div>
+                    <!-- reviews  -->
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <!-- comments  -->
+                <div class="client-comment">
+                    <p>I want to give 10/10 for quality , services and time on delivery to the entire team of Online
+                        grocery xpress and suggest them to always provide such a better service to the customers. </p>
+                </div>
+            </div>
+
+            <!-- box-4 -->
+            <div class="testimonial-box">
+                <!-- top  -->
+                <div class="box-top">
+                    <!-- profile  -->
+                    <div class="profile">
+                        <!-- img  -->
+                        <div class="profile-img">
+                            <img src="/image/client8.png" alt="">
+                        </div>
+                        <!-- name and username  -->
+                        <div class="name-user">
+                            <strong>Shankar Koirala</strong>
+                            <span>@shankarkoirala</span>
+                        </div>
+                    </div>
+                    <!-- reviews  -->
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <!-- comments  -->
+                <div class="client-comment">
+                    <p>I want to give 4 star rating for quality , services and time on delivery to the entire team of
+                        Online
+                        grocery xpress and suggest them to always provide such a better service to the customers. </p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <!-- testimonials section ends -->
+
+
+    <!-- our services section starts  -->
+    <section>
+        <h1 class="heading"><span>Our</span> Services</h1>
+        <div class="services-container">
+
+            <div class="service-box">
+                <h1>Online Ordering</h1>
+                <img src="/image/onlineordering.png" alt="online order" style="height: 200px;">
+                <p>We have our Online Grocery Xpress App that can be used for online ordering 24/7.</p>
+                <a href="/code/HTML/productindex.html" class="btn">shop now</a>
+            </div>
+            <div class="service-box">
+                <h1>Delivery Service</h1>
+                <img src="/image/fooddelivery.png" alt="delivery service" style="height: 200px;">
+                <p>We provide delivery services that is budget-friendly for our customers.</p>
+                <a href="/code/HTML/productindex.html" class="btn">shop now</a>
+            </div>
+
+            <div class="service-box">
+                <h1>Customer Support</h1>
+                <img src="/image/customerservice.png" alt="customer service" style="height: 200px;">
+                <p>24/7 customer support to assist you with any queries or issues.</p>
+                <a href="/code/HTML/productindex.html" class="btn">shop now</a>
+            </div>
+        </div>
+    </section>
+    <!-- our services section ends  -->
+
+
+    <!-- this is start of footer section   -->
+    <section class="footer" style="background-color: bisque;">
+
+        <div class="box-container">
+
+            <div class="box">
+                <!-- clickable logo -->
+                <a href="#" class="logo"><img src="/image/Logo.png"> online grocery xpress</a>
+                <p>Welcome to Grocery Xpress, our online grocery shop that delivers the freshest and most extensive
+                    selection of items straight to your home.
+                    Our website was created with convenience and comfort in mind, allowing you to shop for all of your
+                    grocery requirements in one location.
+                    Online Grocery Xpress provides a simple platform for consumers to choose and buy a variety of food
+                    online.</p>
+
+                <div class="share">
+                    <a href="#" class="btn fab fa-facebook-f"></a>
+                    <a href="#" class="btn fab fa-twitter"></a>
+                    <a href="#" class="btn fab fa-instagram"></a>
+                    <a href="#" class="btn fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <!-- next child div for location -->
+            <div class="box">
+                <h3>our location</h3>
+                <div class="links">
+                    <a href="#">Kathmandu</a>
+                    <a href="#">Pokhara</a>
+                    <a href="#">Biratnagar</a>
+                    <a href="#">Damak</a>
+                    <a href="#">Dharan</a>
+                </div>
+            </div>
+            <!-- next child div for navbar -->
+            <div class="box">
+                <h3>quick links</h3>
+                <div class="links">
+                    <a href="/code/HTML/index.html">home</a>
+                    <a href="/code/HTML/productindex.html">product</a>
+                    <a href="/code/HTML/blogindex.html">blog</a>
+                    <a href="/code/HTML/researchindex.html">research</a>
+                    <a href="/code/HTML/aboutusindex.html">about us</a>
+                </div>
+            </div>
+            <!-- next child div for app download -->
+            <div class="box">
+                <h3>download app</h3>
+                <div class="links">
+                    <a href="#">google play</a>
+                    <a href="#">Microsoft Store</a>
+                    <a href="#">app store</a>
+                </div>
+            </div>
+        </div>
+
+
+        <h1 class="credit"> created by <span> online grocery xpress </span> | all rights reserved</h1>
+    </section>
+
+    <!-- this is end of footer section   -->
+
+
+    <!-- using Javascript for image slider -->
+
+    <script>
+        const images = document.querySelectorAll('.image-slider img');
+        let currentSlide = 0;
+
+        function showSlide() {
+            images.forEach(image => {
+                image.style.opacity = 0;
+            });
+            images[currentSlide].style.opacity = 1;
+            currentSlide = (currentSlide + 1) % images.length;
+        }
+
+        // Automatically advance to the next slide every 5 seconds
+        setInterval(showSlide, 5000);
+
+        // Initialize the slider with the first image
+        showSlide();
+
+
+        function display_date() {
+            document.getElementById('date').innerHTML = Date();
+            setTimeout(display_date, 1000)
+        }
+
+        display_date();
+    </script>
+
+
+</body>
+
+</html>
